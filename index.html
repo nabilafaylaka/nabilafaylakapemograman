@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Music - Nabila faylaka</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div class="container" id="loginPage">
+    <div class="left">
+        <h1>Hello, Welcome to music - Nabila faylaka !</h1>
+        <p>Don't have an account?</p>
+        <button onclick="showRegister()">Register</button>
+    </div>
+
+    <div class="right" id="loginForm">
+        <h2>Login</h2>
+        <input id="loginUser" placeholder="Username">
+        <input id="loginPass" type="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div class="right hidden" id="registerForm">
+        <h2>Register</h2>
+        <input id="regUser" placeholder="Username">
+        <input id="regPass" type="password" placeholder="Password">
+        <button onclick="register()">Register</button>
+    </div>
+</div>
+
+<!-- MUSIC -->
+<div class="music-page" id="musicPage">
+
+    <div class="navbar">
+        <h3>🎧 Music Player</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Playlist</a></li>
+            <li><a href="#">Artist</a></li>
+        </ul>
+    </div>
+
+    <div class="search">
+        <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Cari lagu atau penyanyi..."
+            onkeyup="handleSearch(event)">
+    </div>
+
+    <p class="not-found" id="notFound">🎵 Lagu tidak ditemukan</p>
+
+    <div class="banner">
+        <img src="sampul music.png">
+    </div>
+
+    <div class="music-container">
+
+        <div class="card" data-title="my heart" data-artist="afgan acha">
+            <img src="foto lagu my heart.jpg">
+            <h3>My Heart</h3>
+            <p>Afgan feat. Acha</p>
+            <audio controls>
+                <source src="my heart.mp3">
+            </audio>
+        </div>
+
+        <div class="card" data-title="sampai akhir waktu" data-artist="yovie nuno">
+            <img src="foto sampai akhir waktu.jpg">
+            <h3>Sampai Akhir Waktu</h3>
+            <p>Yovie & Nuno</p>
+            <audio controls>
+                <source src="sampai akhir waktu.mp3">
+            </audio>
+        </div>
+
+        <div class="card" data-title="bintang 14 hari" data-artist="kangen band">
+            <img src="foto bintang 14 hari.jpg">
+            <h3>Bintang 14 Hari</h3>
+            <p>Kangen Band</p>
+            <audio controls>
+                <source src="bintang 14 hari.mp3">
+            </audio>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © Music - nabila faylaka
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

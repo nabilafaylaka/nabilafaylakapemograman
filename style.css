@@ -1,0 +1,158 @@
+*{
+    box-sizing:border-box;
+    font-family:"Poppins", Arial, sans-serif;
+}
+
+body{
+    margin:0;
+    background:#f8cfd9;
+}
+
+/* LOGIN */
+.container{
+    display:flex;
+    width:900px;
+    height:450px;
+    background:#fff;
+    margin:80px auto;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.left{
+    width:50%;
+    background:linear-gradient(135deg,#f6b6c8,#f9c5d1);
+    color:white;
+    text-align:center;
+    padding:90px 40px;
+}
+
+.left button{
+    margin-top:25px;
+    padding:12px 40px;
+    background:transparent;
+    border:2px solid white;
+    border-radius:30px;
+    color:white;
+    cursor:pointer;
+}
+
+.right{
+    width:50%;
+    padding:70px 50px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border-radius:8px;
+    border:1px solid #ddd;
+    background:#f5f5f5;
+}
+
+.right button{
+    width:100%;
+    padding:12px;
+    background:#f6b6c8;
+    border:none;
+    border-radius:25px;
+    color:white;
+    cursor:pointer;
+}
+
+.hidden{
+    display:none;
+}
+
+/* MUSIC PAGE */
+.music-page{
+    display:none;
+    background:#111;
+    min-height:100vh;
+    color:white;
+}
+
+/* NAVBAR */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    background:#000;
+}
+
+.navbar ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+}
+
+/* SEARCH */
+.search{
+    padding:20px 30px;
+}
+
+.search input{
+    border-radius:25px;
+    border:none;
+}
+
+/* NOT FOUND */
+.not-found{
+    text-align:center;
+    margin-top:20px;
+    color:#ccc;
+    display:none;
+}
+
+/* BANNER */
+.banner{
+    display:flex;
+    justify-content:center;
+    margin:30px 0;
+}
+
+.banner img{
+    width:400px;
+    border-radius:15px;
+}
+
+/* MUSIC CARD */
+.music-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding-bottom:50px;
+}
+
+.card{
+    background:#222;
+    width:230px;
+    padding:15px;
+    border-radius:15px;
+}
+
+.card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-bottom:10px;
+}
+
+audio{
+    width:100%;
+}
+
+.footer{
+    text-align:center;
+    padding:15px;
+    background:#000;
+}
